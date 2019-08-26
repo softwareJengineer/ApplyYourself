@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <script src="volunteerScript.js"></script>
+  <script type="index.js">
+  </script>
+  <link rel="stylesheet" href="baseStyles.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="volunteerStyles.css">
+  <img id="logo" src="ourLogo.PNG" alt="An image of our logo.">
+  <title>Apply Yourself</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <a href="homePage.html">Home</a>
+      <a href="about.html">About</a>
+      <div class="dropdown">
+        <button class="dropbtn">College Counselor
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="collegecounselor.html">Search</a>
+          <a href="comparisonPage.html">Compare Yourself!</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Resources
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="resources.html">Articles</a>
+          <a href="calendar.html">Calendar</a>
+        </div>
+      </div>
+      <a href="volunteerPage.html">Community Service</a>
+    </div>
+<!--
+      <! Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">About</a>
+        <a href="collegecounselor.html" class="w3-bar-item w3-button w3-padding-large">College Counselor</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Community Service</a>
+      </div>
+
+
+    <!-- Header -->
+    <header class="w3-container w3-grey w3-center" style="padding:128px 16px">
+      <h1 class="w3-margin w3-jumbo">Community Service</h1>
+      <p class="w3-xlarge">Give back to your community, gain experience, and build your resume!</p>
+    </header>
+
+          <h2><center>Find community service centers in the Chicago area!</center></h2>
+
+          <br>
+          <center><button id="go" onclick="makeVolunteerRequest()">Go!</button></center>
+          <br>
+          <table id="table">
+
+          </table>
+<!--
+      </div>
+     </div> -->
+
+    <footer>
+      Your future is defined by what you do <b>today</b> <br> -Robert Kiyosaki
+    </footer>
+
+  </body>
+
+</html>

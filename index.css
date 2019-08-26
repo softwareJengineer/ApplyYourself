@@ -1,0 +1,44 @@
+/* h1{
+  font-family: 'Darker Grotesque',sans-serif;
+  size: 15px
+} */
+body, h1, h2, h4, h5, h6 {
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+.w3-bar, h1, button {
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+.fa-anchor, .fa-coffee {
+  font-size: 200px;
+}
+
+/* .w3-container .w3-red .w3-center {
+  background-color: pink;
+} */
+.navbar {
+  width: 100%;
+}
+
+.dropdown-content, .dropdown {
+  width: 20%;
+}
+
+.dropdown {
+  align-items: center;
+}
+
+h2 {
+  color: black;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky, .content {
+  padding-top: 60px;
+}

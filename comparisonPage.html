@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <img id="logo" src="ourLogo.PNG" alt="Our logo.">
+  <title>Apply Yourself</title>
+  <script src="index.js"></script>
+  <script src="moreData.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="baseStyles.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap" rel="stylesheet">
+  <script src="barGraph.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="comparisonStyles.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="homePage.html">Home</a>
+      <a href="about.html">About</a>
+      <div class="dropdown">
+        <button class="dropbtn">College Counselor
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="collegecounselor.html">Search</a>
+          <a href="comparisonPage.html">Compare Yourself!</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Resources
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="resources.html">Articles</a>
+          <a href="calendar.html">Calendar</a>
+        </div>
+      </div>
+      <a href="volunteerPage.html">Community Service</a>
+    </div>
+
+    <header class="w3-container w3-grey w3-center" style="padding:128px 16px">
+        <h1 class="w3-margin w3-jumbo">Compare Yourself!</h1>
+        <p class="w3-xlarge">See how Your ACT/SAT scores compare!</p>
+      </header>
+      <br>
+      <br>
+  <div class="searchBar">
+    <input rows="1" id="yourScore" placeholder="Enter your ACT or SAT score!"></input>
+    <div class="autocomplete">
+    <input rows="1" id="chosenCollege" placeholder="Choose a College!"></input>
+    </div>
+    <button id="go" onclick="makeActRequest()">Go!</button>
+    <br>
+  </div>
+  <br>
+  <br>
+
+  <div id="chartContainer"></div>
+
+<footer>
+  Your future is defined by what you do <b>today</b> <br> -Robert Kiyosaki
+</footer>
+
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+<script src="comparisonAuto.js" charset="utf-8"></script>
+
+
+</html>

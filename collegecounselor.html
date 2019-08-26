@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <img id="logo" src="ourLogo.PNG" alt="Our logo. A cartoon book with the words 'Apply Yourself: From Students to Students' next to it.">
+  <title>Apply Yourself-College Counselor</title>
+  <meta charset="UTF-8">
+  <script src="moreData.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="autoStyles.css">
+  <script src="collegePageScript.js" charset="utf-8"></script>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="baseStyles.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="homePage.html">Home</a>
+    <a href="about.html">About</a>
+    <div class="dropdown">
+      <button class="dropbtn">College Counselor
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="collegecounselor.html">Search</a>
+        <a href="comparisonPage.html">Compare Yourself!</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Resources
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="resources.html">Articles</a>
+        <a href="calendar.html">Calendar</a>
+      </div>
+    </div>
+    <a href="volunteerPage.html">Community Service</a>
+  </div>
+  <!-- Header -->
+  <header class="w3-container w3-grey w3-center" style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo">College Counselor</h1>
+    <p class="w3-xlarge">Explore and compare college statistics!</p>
+  </header>
+
+  <!-- First Grid -->
+  <br>
+  <div class="searchBar">
+    <div class="inputsOne">
+      <input class="autocomplete" id="inputCollege" type="text" placeholder="Search a college!" autocomplete="off"></input>
+      <button id=submitButtonOne onclick="makeCollegeRequest()">Search!</button>
+    </div>
+    <div class="inputsTwo">
+      <input class="autocomplete" id="inputCollegeTwo" type="text" placeholder="Search a college!" autocomplete="off"></input>
+      <button id=submitButtonOne onclick="makeCollegeRequestTwo()">Search!</button>
+    </div>
+  </div>
+  <br>
+
+  <table id="tableOne" align="center">
+    <!-- sets up the table -->
+    <tr>
+      <!-- tr stands for table row. these three cells below make up one row for the college names -->
+      <th>Name:</th>
+      <!-- th means table head. this one's text is name. -->
+      <td id="schoolName"></td>
+      <!-- i'm not sure what td stands for but it is the table cell's contents. these two have the id of schoolname which we will call later -->
+      <td id="schoolNameTwo"></td>
+    </tr>
+    <!-- pattern continues for all other information we want to display -->
+    <tr>
+      <th>Location:</th>
+      <td id="location"></td>
+      <td id="locationTwo"></td>
+    </tr>
+    <tr>
+      <th>School's Website:</th>
+      <td id="schoolWebsite"></td>
+      <td id="schoolWebsiteTwo"></td>
+    </tr>
+    <tr>
+      <th>Net Price Calculator:</th>
+      <td id="calculator"></td>
+      <td id="calculatorTwo"></td>
+    </tr>
+    <tr>
+      <th># of Students:</th>
+      <td id="population"></td>
+      <td id="populationTwo"></td>
+    </tr>
+    <tr>
+      <th>Cost of Attendance</th>
+      <td id="netCost"></td>
+      <td id="netCostTwo"></td>
+    </tr>
+    <tr>
+      <th>Out-of-state Tuition:</th>
+      <td id="outStateTuition"></td>
+      <td id="outStateTuitionTwo"></td>
+    </tr>
+    <tr>
+      <th>In-state Tuition:</th>
+      <td id="inStateTuition"></td>
+      <td id="inStateTuitionTwo"></td>
+    </tr>
+    <tr>
+      <th>Median Debt:</th>
+      <td id="debt"></td>
+      <td id="debtTwo"></td>
+    </tr>
+    <tr>
+      <th>Average Cumulative ACT Score:</th>
+      <td id="act"></td>
+      <td id="actTwo"></td>
+    </tr>
+    <tr>
+      <th>Average SAT Score:</th>
+      <td id="sat"></td>
+      <td id="satTwo"></td>
+    </tr>
+    <tr>
+      <th>Admission Rate:</th>
+      <td id="admissionRate"></td>
+      <td id="admissionRateTwo"></td>
+    </tr>
+    <tr>
+      <th>Student Earnings 6 Years After Entry:*</th>
+      <td id="earnings"></td>
+      <td id="earningsTwo"></td>
+    </tr>
+    <tr>
+      <th>Demographics:</th>
+      <td id="demographics"></td>
+      <td id="demographicsTwo"></td>
+    </tr>
+    <tr>
+      <th>SAT Subject Test Policy:**</th>
+      <td id="subject"></td>
+      <td id="subjectTwo"></td>
+    </tr>
+    <tr>
+      <th>Recommendation Letters Policy:**</th>
+      <td id="recs"></td>
+      <td id="recsTwo"></td>
+    </tr>
+  </table>
+  <p>If any fields are blank or show null, NaN, or undefined, it means the database did not have this information. In this case, you need to do your own research. We apologize for any inconvenience.
+    <br>* Please keep in mind that this number does not adjust for the purchasing power or cost of living in varying areas. Graduates of certain colleges may be more likely to live in high-salary, high-expense places, therefore inflating this
+    number.
+    <br>** If this field is blank, it does not necessarily mean there is no policy or nothing is required. It means the database did not have info for that college. You should do your own research if this field is blank.
+  </p>
+
+  <footer>
+    Your future is defined by what you do <b>today</b> <br> -Robert Kiyosaki
+  </footer>
+
+
+
+  <script src="autoScript.js" charset="utf-8"></script>
+</body>
+
+</html>

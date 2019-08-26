@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px Arial;
+}
+
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  display: table;
+  float: none;
+  width: 25vw;
+
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+  float: none;
+  width: 100%;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px 5px;
+  font-size: 16px;
+  width: 25vw;
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+}
+
+button {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+  border-style: hidden;
+  padding: 10px 5px;
+  font-size: 16px;
+  width: 67px;
+
+}
+
+.inputsOne, .inputsTwo {
+  display: inline-block;
+  float: none;
+  position: relative;
+  left: 26vw;
+}
+
+.inputsOne {
+  margin-right: 1vw;
+}
+
+.searchBar {
+  width: 100%;
+}
+
+
+
+
+
+
+
+table td, table th {
+  padding: 25px 5px;
+  text-align: left;
+  /* aligns the text to the left */
+  font-size: 1em;
+  border-collapse: collapse;
+  /* collapses the border so there aren't double borders */
+  float: none;
+  text-overflow: clip;
+}
+
+
+table td {
+  border: 1px solid black;
+  width: 35%;
+}
+
+table th {
+  border: 2px solid black;
+  /* makes the border for the table headers bigger */
+  width: 20%;
+}
+
+
+table {
+  width: 90%;
+  /* sets total table width to 100% of the screen size */
+  border-collapse: collapse;
+  display: inline-table;
+  margin-top: 1em;
+  left: 5%;
+  position: relative;
+  table-layout: fixed;
+}
+
+tr:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+tr:nth-child(even):hover {
+  background-color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: #cccccc;
+}
+
+tr:nth-child(odd):hover {
+  background-color: white;
+}
+
+p {
+  width: 90%;
+  left: 5%;
+  position: relative;
+}
