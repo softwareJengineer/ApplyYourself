@@ -20,6 +20,7 @@ h2{
   max-height: 23.5vw;
 }
 
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   height: 100%;
@@ -54,6 +55,7 @@ h3 {
 
 .title {
   color: grey;
+  text-align: center;
 }
 
 .row .button {
@@ -74,4 +76,21 @@ h3 {
 
 a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 100%;
+    padding: 0;
+  }
+  .row img {
+    max-width: 50vw;
+  }
+
+  h2 {
+    text-align: left;
+  }
+  .title {
+    text-align: left;
+  }
 }

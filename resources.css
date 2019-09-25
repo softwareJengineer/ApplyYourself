@@ -53,6 +53,11 @@ body {
   }
 }
 
+.card a {
+  text-decoration: underline;
+  color: navy;
+}
+
 .leftcolumn img {
   width: 100%;
 }
